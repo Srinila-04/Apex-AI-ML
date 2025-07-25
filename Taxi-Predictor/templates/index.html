@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taxi Weekly Riders Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 250px;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h2>Taxi Weekly Riders Prediction</h2>
+    <form method="post" action="/predict">
+        <label>Price per Week:</label>
+<input type="number" name="Priceperweek" required><br>
+
+<label>Population:</label>
+<input type="number" name="Population" required><br>
+
+<label>Monthly Income:</label>
+<input type="number" name="Monthlyincome" required><br>
+
+<label>Average Parking per Month:</label>
+<input type="number" name="Averageparkingpermonth" required><br>
+
+
+        <input type="submit" value="Predict">
+    </form>
+
+    
+</body>
+</html>
