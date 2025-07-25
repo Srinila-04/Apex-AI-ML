@@ -1,0 +1,3 @@
+node_modules/
+movie_model.pkl
+.env
